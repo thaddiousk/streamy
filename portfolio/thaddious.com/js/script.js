@@ -12,6 +12,16 @@ $(window).on("load", function() {
 			queue: false
 		}
 	});
+	
+	var about = document.getElementById('about');
+	var aboutRect = about.getBoundingClientRect();
+	if (aboutRect.top > 0) {
+		var $scrollTo = $('#about');
+		var $container = $("html,body");
+		setTimeout(() => {
+			$container.animate({scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop(), scrollLeft: 0},300); 
+		}, 8000);
+	}
 
 });
 
