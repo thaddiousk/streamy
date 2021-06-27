@@ -13,15 +13,15 @@ $(window).on("load", function() {
 		}
 	});
 	
-	var about = document.getElementById('about');
-	var aboutRect = about.getBoundingClientRect();
-	if (aboutRect.top > 0) {
-		var $scrollTo = $('#about');
-		var $container = $("html,body");
-		setTimeout(() => {
-			$container.animate({scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop(), scrollLeft: 0},300); 
-		}, 8000);
-	}
+	// var about = document.getElementById('about');
+	// var aboutRect = about.getBoundingClientRect();
+	// if (aboutRect.top > 0) {
+	// 	var $scrollTo = $('#about');
+	// 	var $container = $("html,body");
+	// 	setTimeout(() => {
+	// 		$container.animate({scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop(), scrollLeft: 0},300); 
+	// 	}, 8000);
+	// }
 
 });
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Software Engineer", "UX/UI Designer", "Berkeley Student"],
+		strings: ["Berkeley EECS Graduate", "B.S. Computer Engineering", "UX/UI Designer"],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,

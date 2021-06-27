@@ -35,6 +35,19 @@ body {
 	background-image: url(../img/icons/previous.png);
 }
 
+.down-button {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 47px;
+	height: 47px;
+	background-size: cover;
+	background-repeat: no-repeat;
+  bottom: -150px;
+  left: 48%;
+  background-image: url(../img/icons/down.png);
+  position: absolute;
+}
+
 .overlay {
 	width: 100%;
 	height: 100%;
